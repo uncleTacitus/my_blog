@@ -3,37 +3,37 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 曾文的博客
-subtitle: '记录成长，记录生活'
-description: ''
+title: 曾文的博客              # 网站标题
+subtitle: '记录成长，记录生活'  # 网站副标题
+description: ''               # 网站描述
 keywords:
-author: John Doe
-language: zh
-timezone: ''
+author: John Doe              # 作者
+language: zh                  # 语言
+timezone: ''                  # 网站时区，默认使用电脑时区
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
-permalink_defaults:
+url: http://example.com       # 站点URL
+permalink: :year/:month/:day/:title/ # 文章的永久链接格式
+permalink_defaults:           # 永久链接中各部分的默认值
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
+source_dir: source            # 资源文件夹，用来存放内容
+public_dir: public            # 公共文件夹，用来存放生成的站点文件
+tag_dir: tags                 # 标签文件夹
+archive_dir: archives         # 归档文件夹
+category_dir: categories      # 分类文件夹
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render:                  # 跳过指定文件的渲染
 
 # Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
+new_post_name: :title.md  # 新文章的文件名称
+default_layout: post      # 预设布局
+titlecase: false          # 把标题转换为Title Case
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
