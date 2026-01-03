@@ -13,7 +13,7 @@
     "version": "6.3.0"
   },
   "dependencies": {
-    "hexo": "^6.3.0",
+    "hexo": "^8.1.1",
     "hexo-auto-excerpt": "^1.1.2",
     "hexo-butterfly-charts": "^1.1.5",
     "hexo-deployer-git": "^4.0.0",
