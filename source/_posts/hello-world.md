@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Git tutor
 date: 2026-01-11 18:34:00
 ---
 
@@ -27,7 +27,7 @@ $ git config [--global] user.email "[email address]"
 增加/删除文件
 # 添加指定文件到暂存区
 $ git add [file1] [file2] ...
-
+<!-- more -->
 # 添加指定目录到暂存区，包括子目录
 $ git add [dir]
 
