@@ -17,17 +17,7 @@
 		 </div> <!-- alert -->
 	  <% } %>		
 
-	  <% 
-		  // 配置截取字符数（可根据20行效果微调，300为参考值）
-		  var excerptLength = 300;
-		  // 优先使用文章摘要，无摘要则截取正文前N个字符
-		  var excerptContent = item.excerpt || item.content.substring(0, excerptLength);
-		  // 判断正文长度是否超过截取长度，超过则添加省略号和阅读更多链接
-		  if (item.content.length > excerptLength) {
-			excerptContent += '... <a href="' + url_for(item.path) + '" class="read-more">阅读更多</a>';
-		  }
-		%>
-		<%- excerptContent %>	  
+	  <%- item.content %>	  
 	</div>
 
 	<div>

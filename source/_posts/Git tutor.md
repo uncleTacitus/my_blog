@@ -1,9 +1,11 @@
 ---
 title: Git tutor
+abbrlink: 7845
 date: 2026-01-11 18:34:00
 ---
 
 > [git 443解决办法](https://blog.csdn.net/qq_40296909/article/details/134285451) vpn下设置代理端口然后刷新dns,未挂vpn则尝试清除代理
+
 仓库
 > ``` shell
 ># 在当前目录新建一个Git代码库

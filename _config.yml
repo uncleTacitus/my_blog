@@ -5,7 +5,7 @@
 # Site
 title: 塔西佗叔叔的博客
 subtitle: '不止是记录'
-description: '开始于2026年1月1日'
+description: 塔西佗叔叔的个人博客网站，进行个人的记录和总结。
 keywords:
 author: uncle Tacitus
 language: en
@@ -45,6 +45,7 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -97,6 +98,16 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: freemind.386
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'default'
+  line_number: false    # default false
+  custom_css: 'path/to/your/custom.css'     # optional
+# hexo-excerpt 配置
+excerpt:
+  depth: 6 # 解析深度，保留6层HTML标签（足够保留所有Markdown格式）
+  excerpt_excludes: [] # 排除不需要生成摘要的文章
+  more_excludes: [] # 排除不需要 <!-- more --> 标记的文章
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -17,7 +17,7 @@
 		 </div> <!-- alert -->
 	  <% } %>		
 
-	  <%- item.content %>	  
+	  <%- item.content || page.content %>	  
 	</div>
 
 	<div>
