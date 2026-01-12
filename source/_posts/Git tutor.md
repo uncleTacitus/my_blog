@@ -27,7 +27,7 @@ date: 2026-01-11 18:34:00
 >$ git config [--global] user.name "[name]"
 >$ git config [--global] user.email "[email address]"
 > ```
-> <!-- more -->
+>
 增加/删除文件
 > ``` shell
 ># 添加指定文件到暂存区
