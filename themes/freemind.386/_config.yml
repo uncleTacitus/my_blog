@@ -8,36 +8,41 @@ menu:
   - title: 文章
     url: archives
     intro: "All the articles."
-    # icon: "fa fa-archive"
+    icon: "fa fa-archive"
   - title: 分類
     url: categories
     intro: "All the categories."
-    # icon: "fa fa-folder"
+    icon: "fa fa-folder"
   - title: タグ
     url: tags
     intro: "All the tags."
-    # icon: "fa fa-tags"
+    icon: "fa fa-tags"
   - title: コード
     url: downloads/code
     intro: "All download codes here."
+    icon: "fa fa-download"
 
 links:
-  - title: Java面试指南
+  - title: "Java Guide"
     url: https://www.yuque.com/itwanger/gykdzg
     intro: "svao"
-    # icon: "fal fa-book-open"
-  - title: Lite aliyun server
-    url: https://swasnext.console.aliyun.com/servers/ap-northeast-1
-    intro: "阿里云轻量服务器"
-    # icon: "fa fa-github"
-  - title: 习字丛林
+    icon: "fa fa-book"
+  - title: "stackoverflow"
+    url: https://stackoverflow.com/
+    intro: "Seraching for solution."
+    icon: "fa fa-stack-overflow"
+  - title: "Typing Jungle"
     url: https://www.edclub.com/sportal/
     intro: "休闲，提升打字熟练度和双手协调度的好去处。"
-    # icon: "fa fa-github"
+    icon: "fa fa-keyboard-o"
   - title: "My Github"
     url: https://github.com/uncleTacitus
     intro: "My Github account."
-    # icon: "fa fa-github"
+    icon: "fa fa-github-square"
+  - title: "LeetCode"
+    url: https://leetcode.cn/problemset/
+    intro: "algorithmic ladder."
+    icon: "fa fa-trophy"
 
 widgets:
 - search
@@ -48,7 +53,7 @@ widgets:
 
 rss: 
 fancybox: true
-favicon: sakura.jpg
+favicon: sakura.png
 duoshuo_shortname:
 
 
