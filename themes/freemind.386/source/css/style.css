@@ -532,8 +532,8 @@ hr {
 }
 
 .logo {
-    background: url("../mei.jpg") no-repeat left top;
-    background-size: 5em
+    background: url("../mei.png") no-repeat left top;
+    background-size: 4em
 }
 
 .logo>h1 {

@@ -9,38 +9,42 @@
 		</div>
 	<% } %>
     <% 
-      var truncateLength = 230;
+      var truncateLength = 300;
       var showMoreBtn = false;
       var showContent = '';
-      var excerptEllipsis = ''; // 定义缺省标识变量
+      var excerptEllipsis = '';
+      // 关键：设置要保留的段落数
+      var keepParagraphs = 4; 
 
-      // 1. 强制兜底获取内容
       var rawContent = item.excerpt || item.content || '';
       var isHomePage = index || (page.type === 'index') || (page.type === 'archive');
 
-      if (isHomePage) { // 主页逻辑
-        showContent = rawContent;
-        // 判断是否需要显示缺省标识和按钮
-        if (item.excerpt && item.content.length > item.excerpt.length) {
+      if (isHomePage) { // 主页只显示前4段
+        // 按 </p> 分割HTML段落（Hexo解析Markdown后，段落对应 <p> 标签）
+        var contentParagraphs = rawContent.split('</p>');
+        // 过滤空段落，避免分割后出现空内容
+        contentParagraphs = contentParagraphs.filter(p => p.trim().length > 0);
+
+        if (contentParagraphs.length > keepParagraphs) {
+          // 只保留前4段，并补全闭合 </p> 标签
+          showContent = contentParagraphs.slice(0, keepParagraphs).join('</p>') + '</p>';
           showMoreBtn = true;
-          // 内容被手动截断，添加换行缺省标识
           excerptEllipsis = '<span class="excerpt-ellipsis">...</span>';
-        } else if (!item.excerpt && rawContent.length > truncateLength) {
-          showMoreBtn = true;
-          // 内容被自动截断，先截取再添加缺省标识
-          showContent = rawContent.substring(0, truncateLength);
-          excerptEllipsis = '<span class="excerpt-ellipsis">...</span>';
+        } else {
+          // 不足4段，显示全部内容
+          showContent = rawContent;
+          showMoreBtn = false;
         }
-        // 拼接内容和缺省标识（关键：确保 ... 在内容末尾换行显示）
+        // 拼接内容和缺省标识
         showContent += excerptEllipsis;
-      } else { // 详情页逻辑
+      } else { // 详情页显示全文
         showContent = item.content || '';
         showMoreBtn = false;
       }
 
       // 最终兜底
       if (!showContent || showContent.length === 0) {
-        showContent = '<p>这个博主很懒，居然新建文件就不管了，哼(๑•̀ㅂ•́)...</p>';
+        showContent = '<p>这个博主很懒，居然新建文件之后就不管了(╯‵□′)╯︵┻━┻</p>';
       }
     %>
     <!-- 渲染内容 + 缺省标识 -->
