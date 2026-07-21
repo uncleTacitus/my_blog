@@ -52,11 +52,6 @@ post_meta:
   categories: true
   tags: true
 
-# Comments
-comments:
-  use:
-  - 
-
 # Avatar
 avatar:
   img: 
