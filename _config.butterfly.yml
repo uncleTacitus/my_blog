@@ -1,0 +1,135 @@
+# Butterfly Theme Configuration
+# https://butterfly.js.org/
+
+# Navigation
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+menu:
+  首页: / || fas fa-home
+  文章: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+
+# Code Blocks
+code_blocks:
+  highlight_theme: mac
+  copy: true
+  fold: false
+  word_wrap: false
+
+# Markdown
+markdown:
+  line_number: true
+  text_align: true
+
+# Google Analytics
+google_analytics:
+  enable: false
+
+# Footer
+footer:
+  since: 2026
+  icon:
+    name: fas fa-heart
+    color: red
+
+# Social
+social:
+  GitHub: https://github.com/uncleTacitus || fab fa-github
+
+# Home page
+index:
+  tag_bar: true
+  category_bar: true
+
+# Post
+post_meta:
+  date_type: created
+  categories: true
+  tags: true
+
+# Comments
+comments:
+  use:
+  - 
+
+# Avatar
+avatar:
+  img: 
+  effect: false
+
+# Aside (sidebar)
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: false
+  position: right
+  card_author:
+    enable: false
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: true
+    sort: updated
+    limit: 5
+  card_categories:
+    enable: true
+    limit: 8
+  card_tags:
+    enable: true
+    limit: 40
+  card_archives:
+    enable: true
+    type: monthly
+    format: YYYY年MM月
+    order: -1
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: false
+    site_runtime:
+      enable: false
+
+# Post reward
+reward:
+  enable: false
+
+# Copy settings
+copy:
+  copyright:
+    enable: false
+
+# Busuanzi
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+# Footer background
+footer_bg: true
+
+# Image settings
+lazyload:
+  enable: false
+preloader: false
+
+# Comment settings
+comments:
+  style: sticky
+
+# Read mode
+readmode: false
+
+# Search
+search:
+  use: local_search
+  placeholder: 搜索
+
+# Tags settings
+tag_plugins:
+  enable: true
