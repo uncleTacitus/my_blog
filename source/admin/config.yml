@@ -2,8 +2,7 @@ backend:
   name: github
   repo: uncleTacitus/my_blog
   branch: main
-  base_url: https://decap-cms-oauth.vercel.app
-  # 如果后续想自建 OAuth，改这里即可
+  base_url: https://www.tacitus65536.xin/api
 
 media_folder: source/images/uploads
 public_folder: /images/uploads
