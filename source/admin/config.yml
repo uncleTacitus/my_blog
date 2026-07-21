@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: uncleTacitus/my_blog
+  branch: main
+  base_url: https://decap-cms-oauth.vercel.app
+  # 如果后续想自建 OAuth，改这里即可
+
+media_folder: source/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: "posts"
+    label: "文章"
+    label_singular: "文章"
+    folder: source/_posts
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["date", "title"]
+    view_filters:
+      - label: "未发布"
+        field: draft
+        pattern: true
+    view_groups:
+      - label: "分类"
+        field: categories
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "摘要链接 (abbrlink)", name: "abbrlink", widget: "string", required: false }
+      - { label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "更新日期", name: "updated", widget: "datetime", required: false, format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "分类", name: "categories", widget: "string", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false, allow_add: true }
+      - { label: "正文", name: "body", widget: "markdown" }
