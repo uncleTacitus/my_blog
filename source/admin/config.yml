@@ -2,7 +2,8 @@ backend:
   name: github
   repo: uncleTacitus/my_blog
   branch: main
-  base_url: https://www.tacitus65536.xin/api
+  base_url: https://www.tacitus65536.xin
+  auth_endpoint: api/auth
 
 media_folder: source/images/uploads
 public_folder: /images/uploads
